@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\0400745\\Documents\\Code - Repositories\\C#\\JoyBridge\\Contracts\\Contracts.csproj": {}
+    "C:\\Users\\0400745\\Documents\\Code - Repositories\\C#\\JoyBridge\\Shared\\Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\0400745\\Documents\\Code - Repositories\\C#\\JoyBridge\\Contracts\\Contracts.csproj": {
+    "C:\\Users\\0400745\\Documents\\Code - Repositories\\C#\\JoyBridge\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\0400745\\Documents\\Code - Repositories\\C#\\JoyBridge\\Contracts\\Contracts.csproj",
-        "projectName": "Contracts",
-        "projectPath": "C:\\Users\\0400745\\Documents\\Code - Repositories\\C#\\JoyBridge\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\0400745\\Documents\\Code - Repositories\\C#\\JoyBridge\\Shared\\Shared.csproj",
+        "projectName": "Shared",
+        "projectPath": "C:\\Users\\0400745\\Documents\\Code - Repositories\\C#\\JoyBridge\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\0400745\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\0400745\\Documents\\Code - Repositories\\C#\\JoyBridge\\Contracts\\obj\\",
+        "outputPath": "C:\\Users\\0400745\\Documents\\Code - Repositories\\C#\\JoyBridge\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
@@ -50,19 +50,21 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Google.Protobuf": {
+            "OpenTelemetry.Extensions.Hosting": {
               "target": "Package",
-              "version": "[3.30.2, )"
+              "version": "[1.12.0, )"
             },
-            "Grpc.Core.Api": {
+            "Serilog": {
               "target": "Package",
-              "version": "[2.71.0, )"
+              "version": "[4.2.0, )"
             },
-            "Grpc.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Serilog.Extensions.Logging": {
               "target": "Package",
-              "version": "[2.71.0, )"
+              "version": "[9.0.1, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
