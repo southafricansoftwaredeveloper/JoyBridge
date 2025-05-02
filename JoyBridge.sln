@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Cont
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{D8D9751B-3355-4C8E-9E9A-E94A5DD786F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simulator", "Simulator\Simulator.csproj", "{FA720C80-588C-4AD8-9C3D-2E606FB0B767}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{D8D9751B-3355-4C8E-9E9A-E94A5DD786F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8D9751B-3355-4C8E-9E9A-E94A5DD786F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8D9751B-3355-4C8E-9E9A-E94A5DD786F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA720C80-588C-4AD8-9C3D-2E606FB0B767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA720C80-588C-4AD8-9C3D-2E606FB0B767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA720C80-588C-4AD8-9C3D-2E606FB0B767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA720C80-588C-4AD8-9C3D-2E606FB0B767}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
