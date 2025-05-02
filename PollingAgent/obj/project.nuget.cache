@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2//b+mE0eew=",
+  "dgSpecHash": "+vAw24c723I=",
   "success": true,
   "projectFilePath": "C:\\Users\\0400745\\Documents\\Code - Repositories\\C#\\JoyBridge\\PollingAgent\\PollingAgent.csproj",
   "expectedPackageFiles": [
@@ -55,7 +55,12 @@
     "C:\\Users\\0400745\\.nuget\\packages\\system.reactive\\6.0.0\\system.reactive.6.0.0.nupkg.sha512",
     "C:\\Users\\0400745\\.nuget\\packages\\system.serviceprocess.servicecontroller\\8.0.1\\system.serviceprocess.servicecontroller.8.0.1.nupkg.sha512",
     "C:\\Users\\0400745\\.nuget\\packages\\system.threading.channels\\8.0.0\\system.threading.channels.8.0.0.nupkg.sha512",
-    "C:\\Users\\0400745\\.nuget\\packages\\websocket.client\\5.1.2\\websocket.client.5.1.2.nupkg.sha512"
+    "C:\\Users\\0400745\\.nuget\\packages\\websocket.client\\5.1.2\\websocket.client.5.1.2.nupkg.sha512",
+    "C:\\Users\\0400745\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.101\\microsoft.net.sdk.compilers.toolset.9.0.101.nupkg.sha512",
+    "C:\\Users\\0400745\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.11\\microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\0400745\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.11\\microsoft.windowsdesktop.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\0400745\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.11\\microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\0400745\\.nuget\\packages\\microsoft.netcore.app.host.win-x86\\8.0.11\\microsoft.netcore.app.host.win-x86.8.0.11.nupkg.sha512"
   ],
   "logs": []
 }
