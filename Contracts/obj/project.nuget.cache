@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "4H1uslXDvZ8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\0400745\\Documents\\Code - Repositories\\C#\\JoyBridge\\Contracts\\Contracts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\0400745\\.nuget\\packages\\google.protobuf\\3.30.2\\google.protobuf.3.30.2.nupkg.sha512",
+    "C:\\Users\\0400745\\.nuget\\packages\\grpc.core.api\\2.71.0\\grpc.core.api.2.71.0.nupkg.sha512"
+  ],
+  "logs": []
+}
