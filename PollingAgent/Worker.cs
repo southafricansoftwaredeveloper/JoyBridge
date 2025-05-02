@@ -61,6 +61,11 @@ public class Worker : BackgroundService
 
                 while (!stop.IsCancellationRequested && tcp.Connected)
                 {
+
+                    if (_paused)
+                    {
+                        continue;
+                    }
                     
                     // we cannot read here prematurely as the Simulator might not be connected.. a little bit weird
                     var line = await reader.ReadLineAsync();
