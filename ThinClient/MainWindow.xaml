@@ -4,9 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ThinClient"
+        xmlns:viewModels="clr-namespace:ThinClient.ViewModels"
         mc:Ignorable="d"
+        d:DataContext="{x:Static viewModels:MainViewModel.DesignInstance}"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        
+        <DataGrid  ItemsSource="{Binding Events}" AutoGenerateColumns="True" IsReadOnly="True"/>
+        
 </Window>
