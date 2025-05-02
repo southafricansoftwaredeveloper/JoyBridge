@@ -32,12 +32,10 @@ app.Map("/ws", async ctx =>
         ctx.Response.StatusCode = StatusCodes.Status400BadRequest;
         return;
     }
-
+    
     using var ws = await ctx.WebSockets.AcceptWebSocketAsync();
-    
-    Log.Information("WS connected from {Client}", ctx.Connection.RemoteIpAddress);
-    
     await WebSocketEcho.Run(ws, ctx.RequestAborted);
+    
 });
 
-app.Run();
+await app.RunAsync();

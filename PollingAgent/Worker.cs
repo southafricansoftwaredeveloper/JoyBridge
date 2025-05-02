@@ -1,4 +1,5 @@
 using System.Net.Sockets;
+using System.Net.WebSockets;
 using System.Text.Json;
 using Contracts.Messages;
 using Microsoft.Extensions.Options;
@@ -61,6 +62,7 @@ public class Worker : BackgroundService
                 while (!stop.IsCancellationRequested && tcp.Connected)
                 {
                     
+                    // we cannot read here prematurely as the Simulator might not be connected.. a little bit weird
                     var line = await reader.ReadLineAsync();
 
                     // null check data
@@ -82,7 +84,14 @@ public class Worker : BackgroundService
                     var json = JsonSerializer.Serialize(ev);
                     
                     // we need to forward the data to our thin client
-                    await GatewayWs.SendInstant(json);
+                    if (GatewayWs.IsRunning)
+                    {
+                        await GatewayWs.SendInstant(json);
+                    }
+                    else
+                    {
+                        _log.LogWarning("WebSocket is not open; skipping send");
+                    }
 
                     _log.LogInformation("Forwarded event for {Patient}", ev.PatientId);
                 }
