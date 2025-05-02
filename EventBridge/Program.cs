@@ -54,6 +54,7 @@ channel.QueueBind(queue, "patient.events", "clinic.*");
 
 // init db
 await using var db = new EventDb();
+db.Database.Migrate();
 
 // create consumer to respond to polling agent
 var consumer = new AsyncEventingBasicConsumer(channel);
