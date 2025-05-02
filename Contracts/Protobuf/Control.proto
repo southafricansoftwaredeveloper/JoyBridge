@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+package Control;
+
+service CommandChannel {
+  rpc PauseStream (PauseRequest) returns (Ack);
+  rpc ResumeStream (ResumeRequest) returns (Ack);
+}
+
+message PauseRequest { string reason = 1; }
+message ResumeRequest { string reason = 1; }
+
+message Ack         { bool success  = 1; string message = 2; }
