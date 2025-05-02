@@ -9,6 +9,19 @@
         d:DataContext="{x:Static viewModels:MainViewModel.DesignInstance}"
         Title="MainWindow" Height="450" Width="800">
         
-        <DataGrid  ItemsSource="{Binding Events}" AutoGenerateColumns="True" IsReadOnly="True"/>
+        <Grid>
+                <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+        
+                <StackPanel Grid.Row="0" Orientation="Horizontal">
+                        <TextBlock DockPanel.Dock="Top" Text="{Binding Status}" FontWeight="Bold" Margin="4" Width="250"/>
+                        <Button Content="{Binding ToggleText}" Command="{Binding ToggleCommand}" Margin="4"/>
+                </StackPanel>
+        
+                <DataGrid Grid.Row="1" ItemsSource="{Binding Events}" AutoGenerateColumns="True" IsReadOnly="True"/>
+        
+        </Grid>
         
 </Window>
