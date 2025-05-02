@@ -49,7 +49,7 @@ public partial class MainViewModel : ObservableObject
         _events = new ObservableCollection<PatientEvent>();
         
         ToggleCommand = new AsyncRelayCommand(ToggleAsync);
-
+        
         // configure web socket connection
         var client = new WebsocketClient(new Uri("ws://localhost:5130/ws"));
         client.MessageReceived.Subscribe(msg =>

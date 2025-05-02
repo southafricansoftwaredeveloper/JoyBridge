@@ -30,10 +30,18 @@ builder.Services.AddSingleton(sp =>
 
 builder.Services.AddGrpc();
 
+
 builder.WebHost.ConfigureKestrel(opts =>
 {
     // port 5130 and plain http for our web socket connections, this needs to be secured going forward
     opts.ListenLocalhost(5130, lo => lo.Protocols = HttpProtocols.Http1);
+    
+    // port 5131 with HTTP/2 for our gRPC 
+    opts.ListenLocalhost(5131, lo =>
+    {
+        lo.Protocols = HttpProtocols.Http1AndHttp2;
+        lo.UseHttps();
+    });
 });
 
 var app = builder.Build();
