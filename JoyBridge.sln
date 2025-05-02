@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simulator", "Simulator\Simulator.csproj", "{FA720C80-588C-4AD8-9C3D-2E606FB0B767}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PollingAgent", "PollingAgent\PollingAgent.csproj", "{2E525E15-3C6B-4E3B-B9AA-BAEBE6C7528E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{FA720C80-588C-4AD8-9C3D-2E606FB0B767}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA720C80-588C-4AD8-9C3D-2E606FB0B767}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA720C80-588C-4AD8-9C3D-2E606FB0B767}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E525E15-3C6B-4E3B-B9AA-BAEBE6C7528E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E525E15-3C6B-4E3B-B9AA-BAEBE6C7528E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E525E15-3C6B-4E3B-B9AA-BAEBE6C7528E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E525E15-3C6B-4E3B-B9AA-BAEBE6C7528E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
